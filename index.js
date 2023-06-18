@@ -8,7 +8,7 @@ let operator2 = getNumber();
 let operand = getOperand();
 let res = calc();
 
-alert(`${operator1} + ${operator2} = ${res}`);
+alert(`${operator1} ${operand} ${operator2} = ${res}`);
 
 function getNumber() {
     let numb = Number(prompt("Type number"));
