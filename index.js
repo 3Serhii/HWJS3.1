@@ -6,7 +6,7 @@
 let operator1 = getNumber();
 let operator2 = getNumber();
 let operand = getOperand();
-let res = calc();
+let res = calc(operator1, operator2, operand);
 
 alert(`${operator1} ${operand} ${operator2} = ${res}`);
 
@@ -30,20 +30,20 @@ function getOperand() {
     return operand
 }
 
-function calc() {
+function calc(num1, num2, oper) {
     let result
-    switch (operand) {
+    switch (oper) {
         case "+":
-            result = operator1 + operator2
+            result = num1 + num2
             break;
         case "-":
-            result = operator1 - operator2
+            result = num1 - num2
             break;
         case "*":
-            result = operator1 * operator2
+            result = num1 * num2
             break;
         case "/":
-            result = operator1 / operator2
+            result = num1 / num2
             break;
     }
     return result
